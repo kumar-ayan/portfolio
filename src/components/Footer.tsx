@@ -10,7 +10,7 @@ export const Footer = () => {
                 <div className="flex gap-12">
                     <div className="flex flex-col gap-2">
                         <span className="text-white">PROJECTS</span>
-                        <a href="#projects" className="hover:text-accent transition-colors">GUARDIAN</a>
+                        <a href="https://github.com/AyanKumar766/Silent-Guardian" className="hover:text-accent transition-colors">GUARDIAN</a>
                         <a href="#projects" className="hover:text-accent transition-colors">ASSISTANT</a>
                         <a href="#projects" className="hover:text-accent transition-colors">CLASSIFIER</a>
                     </div>
