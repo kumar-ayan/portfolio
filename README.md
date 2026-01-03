@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+# Ayan Kumar — Software Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my **personal portfolio website**, built to present my **engineering skills, projects, and technical focus areas** to recruiters and hiring teams.
 
-Currently, two official plugins are available:
+🌐 **Live Portfolio:**  
+👉 https://portfolio-ayan-kumar.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 👨‍💻 Candidate Snapshot
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Ayan Kumar**  
+Computer Science Student | Software Engineering | AI/ML | Web Systems
 
-## Expanding the ESLint configuration
+I am a results-oriented developer with hands-on experience in **building scalable web applications, AI-driven systems, and privacy-focused products**. I focus on writing clean, maintainable code and solving real-world problems using strong fundamentals in **DSA, system design, and applied machine learning**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Actively seeking **Software Engineering / AI / Research Internship opportunities**.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🔧 Technical Skills
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Languages**
+- Python, JavaScript, C/C++
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Frontend**
+- React, HTML5, CSS3
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Backend & APIs**
+- Node.js (foundational), REST APIs
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**AI / ML**
+- TensorFlow, Model Inference, NLP Pipelines
+- OpenAI / Gemini APIs, Local Model Execution
+
+**Core CS**
+- Data Structures & Algorithms
+- Object-Oriented Programming
+- Operating Systems (basics)
+- Database Concepts
+- Computer Networks (basics)
+
+**Tools**
+- Git, GitHub, Vercel
+
+---
+
+## 📁 Portfolio Highlights
+
+### 🔹 Silent Guardian
+**Privacy-First Mental Health AI System**
+- Designed an AI assistant with **local-first processing** to ensure user privacy
+- Implemented speech-to-text, emotion classification, and contextual response generation
+- Deployed a production-ready web interface
+- Focused on scalability, security, and real-world usability
+
+### 🔹 Additional Projects
+- Full-stack web applications using React
+- AI/ML experiments focused on real-world inference
+- Data-driven applications with clean architecture
+
+(Complete project details available on the portfolio website.)
+
+---
+
+## 🧠 Engineering Approach
+
+- Strong emphasis on **problem decomposition**
+- Preference for **scalable and maintainable architecture**
+- Practical application of **CS fundamentals**
+- Continuous learning through building, shipping, and iterating
+
+---
+
+## 🚀 Local Development
+
+```bash
+git clone https://github.com/AyanKumar766/portfolio.git
+cd portfolio
+npm install
+npm run dev
