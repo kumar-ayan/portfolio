@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowRight } from 'lucide-react';
 
+import resume from '../assets/Resume.pdf';
+
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -66,7 +68,11 @@ export const Navbar = () => {
 
                         <div className="p-8 border-t border-white/10 flex justify-between font-mono text-xs text-neutral-500">
                             <p>© 2026 AYAN KUMAR</p>
-                            <p>RESUME / LINKEDIN</p>
+                            <div className="flex gap-2">
+                                <a href={resume} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">RESUME</a>
+                                <span>/</span>
+                                <a href="https://www.linkedin.com/in/ayan-kumar-/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">LINKEDIN</a>
+                            </div>
                         </div>
                     </motion.div>
                 )}

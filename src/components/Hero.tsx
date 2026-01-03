@@ -57,7 +57,7 @@ export const Hero = () => {
                 </Canvas>
             </div>
 
-            <div className="relative z-10 text-center pointer-events-none mix-blend-difference text-white">
+            <div className="relative z-10 w-full text-center pointer-events-none mix-blend-difference text-white">
                 <h1 className="text-[15vw] leading-none font-black tracking-tighter select-none">
                     AYAN
                 </h1>
