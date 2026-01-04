@@ -6,6 +6,8 @@ import { Cube } from './components/Cube';
 import { Footer } from './components/Footer';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
+import LogoLoop from './components/LogoLoop';
+import { SiPython, SiCplusplus, SiJavascript, SiTypescript, SiReact, SiNodedotjs, SiTailwindcss, SiGit, SiGoogle } from 'react-icons/si';
 
 function App() {
   return (
@@ -135,11 +137,11 @@ function App() {
             <h2 className="text-6xl md:text-9xl font-black tracking-tighter mb-12 mix-blend-difference">
               THE STACK
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-16">
               <div className="p-6 border border-white/10 hover:bg-white hover:text-black transition-colors duration-300">
                 <h3 className="font-mono text-accent mb-2">CORE</h3>
                 <h4 className="font-bold text-xl mb-2">LANGUAGES</h4>
-                <p className="opacity-60 text-sm">Python, C++, JavaScript, SQL, HTML/CSS, Bash</p>
+                <p className="opacity-60 text-sm">Python, C++, JavaScript, SQL, HTML/CSS</p>
               </div>
               <div className="p-6 border border-white/10 hover:bg-white hover:text-black transition-colors duration-300">
                 <h3 className="font-mono text-accent mb-2">INTELLIGENCE</h3>
@@ -149,8 +151,29 @@ function App() {
               <div className="p-6 border border-white/10 hover:bg-white hover:text-black transition-colors duration-300">
                 <h3 className="font-mono text-accent mb-2">INFRA</h3>
                 <h4 className="font-bold text-xl mb-2">TOOLS & WEB</h4>
-                <p className="opacity-60 text-sm">React, Node.js, Tailwind CSS, Vercel V0, Git/GitHub, Linux</p>
+                <p className="opacity-60 text-sm">React, Node.js, Tailwind CSS, Vercel, Git/GitHub</p>
               </div>
+            </div>
+
+            <div className="w-full relative">
+              <LogoLoop
+                logos={[
+                  { node: <SiPython />, title: "Python" },
+                  { node: <SiCplusplus />, title: "C++" },
+                  { node: <SiJavascript />, title: "JavaScript" },
+                  { node: <SiTypescript />, title: "TypeScript" },
+                  { node: <SiReact />, title: "React" },
+                  { node: <SiNodedotjs />, title: "Node.js" },
+                  { node: <SiTailwindcss />, title: "Tailwind CSS" },
+                  { node: <SiGit />, title: "Git" },
+                  { node: <SiGoogle />, title: "Google Gemini" },
+                ]}
+                speed={100}
+                direction="left"
+                logoHeight={48}
+                gap={60}
+                pauseOnHover={true}
+              />
             </div>
           </div>
         </Section>
