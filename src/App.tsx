@@ -119,7 +119,20 @@ function App() {
               <span className="text-stroke" style={{ WebkitTextFillColor: '#F2F2F2' }}>TRAJECTORY</span>
             </h2>
 
-            <div className="flex flex-col items-end gap-12">
+            <div className="flex flex-col items-end gap-12 w-full">
+              <div className="border-b border-black/20 pb-8 w-full md:w-2/3">
+                <div className="flex justify-between items-baseline mb-2">
+                  <h3 className="text-2xl md:text-3xl font-bold">OPEN SOURCE CONTRIBUTOR</h3>
+                  <span className="font-mono text-accent">MAY 2026 - PRESENT</span>
+                </div>
+                <h4 className="text-xl mb-4 font-mono opacity-80">GSSOC</h4>
+                <ul className="text-lg opacity-70 list-disc list-inside space-y-2 text-left">
+                  <li> Contributing bug fixes, feature additions, and documentation </li>
+                  <li>improvements across multiple production codebases simultaneously</li>
+                  <li>Managing multiple projects over network. </li>
+                </ul>
+              </div>
+
               <div className="border-b border-black/20 pb-8 w-full md:w-2/3">
                 <div className="flex justify-between items-baseline mb-2">
                   <h3 className="text-2xl md:text-3xl font-bold">CONTRIBUTOR</h3>
