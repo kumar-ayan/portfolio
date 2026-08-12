@@ -1,14 +1,21 @@
-import { Canvas } from '@react-three/fiber';
+import React, { Suspense } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Section } from './components/Section';
-import { Cube } from './components/Cube';
 import { Footer } from './components/Footer';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import LogoLoop from './components/LogoLoop';
 import { SiPython, SiCplusplus, SiJavascript, SiTypescript, SiReact, SiNodedotjs, SiTailwindcss, SiGit, SiGoogle, SiGithub } from 'react-icons/si';
 import { FiExternalLink } from 'react-icons/fi';
+
+// Lazy-load 3D components — these pull in Three.js (~877 KB) only when needed
+const LazyCanvas = React.lazy(() =>
+  import('./components/LazyCanvas').then((mod) => ({ default: mod.LazyCanvas }))
+);
+const Cube = React.lazy(() =>
+  import('./components/Cube').then((mod) => ({ default: mod.Cube }))
+);
 
 function App() {
   return (
@@ -193,10 +200,12 @@ function App() {
 
         <Section id="arsenal" className="bg-black text-white relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] opacity-20 pointer-events-none">
-            <Canvas>
-              <ambientLight intensity={0.5} />
-              <Cube />
-            </Canvas>
+            <Suspense fallback={null}>
+              <LazyCanvas>
+                <ambientLight intensity={0.5} />
+                <Cube />
+              </LazyCanvas>
+            </Suspense>
           </div>
 
           <div className="relative z-10 max-w-6xl mx-auto text-center">

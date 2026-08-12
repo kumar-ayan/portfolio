@@ -38,15 +38,20 @@ export const Contact = () => {
         setStatus('loading');
 
         try {
-            const formDataToSend = new FormData();
-            formDataToSend.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "3825446d-d67d-4ac5-bb49-22f501072ac4");
-            formDataToSend.append("name", name);
-            formDataToSend.append("email", email);
-            formDataToSend.append("message", message);
-
-            const response = await fetch("https://api.web3forms.com/submit", {
+            const response = await fetch(`https://formsubmit.co/ajax/${CONTACT_EMAIL}`, {
                 method: "POST",
-                body: formDataToSend
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    message,
+                    _subject: `Portfolio Contact: ${name}`,
+                    _captcha: "false",
+                    _template: "table",
+                }),
             });
 
             const data = await response.json();
